@@ -19,7 +19,7 @@ const UserSchema = new mongoose.Schema({
         unique: true
     }
 });
- 
+  
 UserSchema.plugin(passportLocalMongoose);
 
 passport.use(new LocalStrategy(User.authenticate()));

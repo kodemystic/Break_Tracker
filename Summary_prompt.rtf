@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17860\viewh11160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 I need to make a break tool for my service desk team.\
+The purpose is for the service controllers to let the team know how many slots to go for break are available at any time. They change the number of slots available according to the SLA % and to the volume of calls coming. That is the main function. Of course, it also serves as away for the agents to "communicate" to the service controllers when they go for a break.\
+The agents should be able to login to this tool with an email and password, and the service controllers as well. The service controllers should have admin rights to manage the number of slots available, and also sometimes there might be the case that agents go at the same time by accident or they forget to return from break, so the service controllers can go it and take their name off, because ( I forgot to say) the agents are supposed to use this tool to show they went for break, but they also need to use it when they come back from break to let the service controllers they are done. I think such a tool is not too much complicated to build. But I am not sure how to start. Since I am already building a Chrome Extension with other features, I was thinking of adding yet another TAB/section to the extension where it loads into an iframe the break tool. The break tool could be an HTML page stored somewhere that is loaded into the iframe of the extension HTML page. Or maybe the break tool can be something not related to the extension but just another page. Other possibilities are to build this tool using Power Apps, that that maybe would be too much complicated and require more effort then just a simple HTML page? If I go the HTML route, regardless if it gets loaded in the extension or not, I imagine I'd need to use some way to store the accounts, login credentials, number of slots available, the exact time the agent started and ended his/her break. So I was thinking maybe localStorage? But it cannot be because that just stays stored in the browser and cannot be shared with the team. It must be a way to store the information that is shared with everybody. So PHP? Or some kind of server-side Javascript or AJAX or something I don't know. I want to go the easiest route possible. \
+\
+Service controllers need to have accounts for the purpose of administrating the tool, but their breaks are not managed by this tool, this should just be used to manage agents breaks. So I guess admin accounts don't need "startTime" or "endTime" or anything like that, they probably just need "email", "password", "name" and "role". \
+\
+I want to use the crypto module in the browser, which provides cryptographic functionality that includes a set of hashing functions. We will use this for basic encryption of users passwords.\
+This will take advantage of the Browsers.\
+I just want a simple solution so that I or the admins are not able to see the passwords the accounts are using, if they happen to open the JSON file. Because maybe some people use the same password in different services etc. Simple security. Not worried about interception since all this will happen within the company's intranet.\
+\
+Based on all the information I gave you, also consider this:\
+-Need first login page when all users land first.\
+-Normal users need to have the ability to see schedule their breaks and also apply to take break immediately.\
+-All users need the ability to see all other users break schedules.\
+-All users need the ability to see the number of available slots at any given moment.\
+-All users need the ability to see the queue line of agents waiting to go on the break.\
+-All users need the ability to see the number of users logged in to the tool at any moment.\
+-Admins can edit everything: add and remove agents on break. \
+-Admins can add or remove agents from the queue.\
+-Admins can edit the number of slots available at any given moment.\
+-Admins can forcefully log out other users who ended the shift, but maybe forgot to log out from the tool or left their computers on.\
+-Admins can edit the total time for break in a day. Sometimes there are errors and admins will need to correct the total minutes still available. \
+\
+\
+So finally I decided to use \'93node.js\'94 together with \'93SQLite\'94.\
+The page will be stored online, then loaded into a Chrome Extension\'92s page iframe.\
+\
+At the moment I am to start the server using terminal command \'93node index.js\'94, then go into the login page index.html, login with the credentials, and be redirected to another page where the tool is: break_tracker.html.\
+\
+But there is much to be done and I need your help.}

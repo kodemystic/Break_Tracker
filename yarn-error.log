@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add fullname
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js upgrade
 
 PATH: 
   C:\Python311\Scripts\;C:\Python311\;C:\Windows\CCM\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x32;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x64;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\TarranaB\AppData\Local\Microsoft\WindowsApps;C:\Users\TarranaB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\TarranaB\AppData\Local\Programs\Git\cmd;C:\Users\TarranaB\AppData\Local\GitHubDesktop\bin;C:\Users\TarranaB\AppData\Roaming\npm;C:\Users\TarranaB\AppData\Local\Yarn\bin

@@ -16,6 +16,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "fullname": "^4.0.1",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.4",
     "passport": "^0.6.0",
@@ -26,6 +27,7 @@
     "react-router": "^6.7.0",
     "react-router-dom": "^6.7.0",
     "react-scripts": "^5.0.1",
-    "socket.io": "^4.5.4"
+    "socket.io": "^4.5.4",
+    "username": "^6.0.0"
   }
 }

@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 const fullName = require("fullname");
-
+ 
 // Required for MongoDB connection
 require("dotenv").config({ path: "mongodb.env" });
 const dotenv = require("dotenv");

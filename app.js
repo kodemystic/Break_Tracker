@@ -77,9 +77,9 @@ app.get("/", function (req, res) {
 // Showing secret page
 app.get("/secret", isLoggedIn, function (req, res) {
   if (req.user.roles === "admin") {
-    res.render("secret_admin");
+    res.render("secret_admin", { username: req.user.username });
   } else if (req.user.roles === "user") {
-    res.render("secret.ejs", { username: req.user.username });
+    res.render("secret", { username: req.user.username });
   }
 });
 

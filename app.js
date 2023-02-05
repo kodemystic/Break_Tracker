@@ -9,7 +9,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 const fullName = require("fullname");
 
-// Required for MongoDB connection
+// Required for connection to the MongoDB cloud
 require("dotenv").config({ path: "mongodb.env" });
 const dotenv = require("dotenv");
 

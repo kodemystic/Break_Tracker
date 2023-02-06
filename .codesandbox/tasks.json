@@ -12,7 +12,7 @@
     "test": {
       "name": "test",
       "command": "yarn test",
-      "runAtStart": false
+      "runAtStart": true
     },
     "node app.js": {
       "name": "node app.js",

@@ -7,7 +7,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
-const fullName = require("fullname");
+//const fullName = require("fullname");
 
 // Required for connection to the MongoDB cloud
 require("dotenv").config({ path: "mongodb.env" });
@@ -23,10 +23,10 @@ if (!dbPath) {
   process.exit(1);
 }
 
-// Start fullname
-(async () => {
-  console.log(await fullName());
-})();
+// // Start fullname
+// (async () => {
+//   console.log(await fullName());
+// })();
 
 var app = express();
 app.set("view engine", "ejs");
@@ -107,9 +107,9 @@ app.get("/secret", isLoggedIn, async function (req, res) {
   const name = await fullName();
 
   if (req.user.roles === "admin") {
-    res.render("secret_admin", { name });
+    res.render("secret_admin", { name: req.user.username });
   } else if (req.user.roles === "user") {
-    res.render("secret", { name });
+    res.render("secret", { name: req.user.username });
   }
 });
 
@@ -129,7 +129,7 @@ app.post("/register", function (req, res) {
         return res.render("register");
       }
       passport.authenticate("local")(req, res, function () {
-        res.redirect("/secret", { username: req.user.username });
+        res.redirect(`/secret?username=${req.user.username}`);
       });
     }
   );

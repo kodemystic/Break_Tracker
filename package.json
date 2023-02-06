@@ -2,9 +2,6 @@
   "name": "login_nodejs_mongodb",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -29,5 +26,12 @@
     "react-scripts": "^5.0.1",
     "socket.io": "^4.5.4",
     "username": "^6.0.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
 }

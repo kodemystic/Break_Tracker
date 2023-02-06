@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add nodemon
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js upgrade
 
 PATH: 
   C:\Python311\Scripts\;C:\Python311\;C:\Windows\CCM\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x32;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x64;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\TarranaB\AppData\Local\Microsoft\WindowsApps;C:\Users\TarranaB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\TarranaB\AppData\Local\Programs\Git\cmd;C:\Users\TarranaB\AppData\Local\GitHubDesktop\bin;C:\Users\TarranaB\AppData\Roaming\npm;C:\Users\TarranaB\AppData\Local\Yarn\bin
@@ -35,18 +35,11 @@ npm manifest:
       "ejs": "^3.1.8",
       "express": "^4.18.2",
       "express-session": "^1.17.3",
-      "fullname": "^4.0.1",
       "mongodb": "^4.13.0",
       "mongoose": "^6.8.4",
       "passport": "^0.6.0",
       "passport-local": "^1.0.0",
       "passport-local-mongoose": "^7.1.2",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-router": "^6.7.0",
-      "react-router-dom": "^6.7.0",
-      "react-scripts": "^5.0.1",
-      "socket.io": "^4.5.4",
       "username": "^6.0.0"
     }
   }

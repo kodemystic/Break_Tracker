@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 
-// Required for connection to the MongoDB cloud
+// Required for connection to the MongoDB cloud -
 require("dotenv").config({ path: "mongodb.env" });
 const dotenv = require("dotenv");
 

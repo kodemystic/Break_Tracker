@@ -7,7 +7,6 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
-//const fullName = require("fullname");
 
 // Required for connection to the MongoDB cloud
 require("dotenv").config({ path: "mongodb.env" });
@@ -22,11 +21,6 @@ if (!dbPath) {
   );
   process.exit(1);
 }
-
-// // Start fullname
-// (async () => {
-//   console.log(await fullName());
-// })();
 
 var app = express();
 app.set("view engine", "ejs");

@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: UNKNOWN: unknown error, lstat 'C:\Users\TarranaB\OneDrive - FUJITSU\Documents\_PERSONAL\2_ASK_IT\1_DEVELOPER\2_BREAK_TRACKER\node_modules\yocto-queue'
+  Error: UNKNOWN: unknown error, lstat 'C:\Users\TarranaB\OneDrive - FUJITSU\Documents\_PERSONAL\2_ASK_IT\1_DEVELOPER\2_BREAK_TRACKER\Break_Tracker_v0.1\node_modules\@aws-sdk\util-middleware'
 
 npm manifest: 
   {
@@ -7182,9 +7182,9 @@ Lockfile:
       yallist "^4.0.0"
   
   minipass@^4.0.0:
-    version "4.0.1"
-    resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.0.1.tgz#2b9408c6e81bb8b338d600fb3685e375a370a057"
-    integrity sha512-V9esFpNbK0arbN3fm2sxDKqMYgIp7XtVdE4Esj+PE4Qaaxdg1wIw48ITQIOn1sc8xXSmUviVL3cyjMqPlrVkiA==
+    version "4.0.2"
+    resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.0.2.tgz#26fc3364d5ea6cb971c6e5259eac67a0887510d1"
+    integrity sha512-4Hbzei7ZyBp+1aw0874YWpKOubZd/jc53/XU+gkYry1QV+VvrbO8icLM5CUtm4F0hyXn85DXYKEMIS26gitD3A==
   
   minizlib@^2.1.1:
     version "2.1.2"

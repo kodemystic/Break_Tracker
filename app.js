@@ -97,9 +97,6 @@ app.get("/", function (req, res) {
 
 // Showing secret page
 app.get("/secret", isLoggedIn, async function (req, res) {
-  const fullName = require("fullname");
-  const name = await fullName();
-
   if (req.user.roles === "admin") {
     res.render("secret_admin", { name: req.user.username });
   } else if (req.user.roles === "user") {
